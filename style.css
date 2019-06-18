@@ -1,880 +1,1214 @@
 :root {
-    --borderRadious: 10px;
+  --borderRadious: 10px;
 }
 
 * {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav {
-
-    width: 100%;
-    max-height: 50px;
-    max-width: 1000px;
-    background-color: #25c270;
-    padding: 5px 30px;
-    border-radius: 1px;
-    color: white;
-    position: relative;
-    z-index: 100000;
+  width: 100%;
+  max-height: 50px;
+  max-width: 1000px;
+  background-color: #25c270;
+  padding: 5px 30px;
+  border-radius: 1px;
+  color: white;
+  position: relative;
+  z-index: 100000;
 }
 
 .menuBar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 .menuBarP {
-    all: unset;
-    align-self: center;
+  all: unset;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .enter {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .menuBarInput {
-    all: unset;
-    width: 300px;
-    height: 40px;
-    border-radius: var(--borderRadious);
-    background-color: #188a52;
-    background-image: url(search-solid.svg);
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-position-x: 98%;
-    background-position-y: 50%;
-    padding: 0 10px;
+  all: unset;
+  width: 300px;
+  height: 40px;
+  border-radius: var(--borderRadious);
+  background-color: #188a52;
+  background-image: url(search-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position-x: 98%;
+  background-position-y: 50%;
+  padding: 0 10px;
 }
 
 .menuBarInput:focus {
-    background-image: url();
+  background-image: url();
 }
 
-
 .mainDesign {
-    background-color: #d9dbdd;
-    border-radius: var(--borderRadious);
-
+  background-color: #d9dbdd;
+  border-radius: var(--borderRadious);
 }
 
 main {
-    width: 100%;
-    height: 500px;
-    max-width: 1000px;
-    display: flex;
-    padding: 25px 50px;
-    margin-top: -200px;
+  width: 100%;
+  height: 500px;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 50px;
+  margin-top: -200px;
 }
 
 aside {
-    width: 100%;
-    height: 50%;
-    flex: 1;
-    padding: 0 10px;
-    position: relative;
+  width: 100%;
+  height: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 10px;
+  position: relative;
 }
 
 .asideRow1 {
-    width: 100%;
-    height: 30px;
-    margin-bottom: 20px;
-    position: relative;
-    top: 0;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  top: 0;
 }
 
 .asideRow2 {
-    width: 90%;
-    height: 15px;
-    margin-bottom: 10px;
-    position: absolute;
-    top: 50px;
+  width: 90%;
+  height: 15px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 50px;
 }
 
 .asideRow3 {
-    width: 95%;
-    height: 15px;
-    margin-bottom: 10px;
-    position: absolute;
-
-    top: 75px;
-
+  width: 95%;
+  height: 15px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 75px;
 }
 
 .asideRow4 {
-    width: 80%;
-    height: 15px;
-    margin-bottom: 10px;
-    position: absolute;
-
-    top: 100px;
-
+  width: 80%;
+  height: 15px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 100px;
 }
 
 .asideRow5 {
-    width: 85%;
-    height: 15px;
-    margin-bottom: 30px;
-    position: absolute;
-    top: 125px;
+  width: 85%;
+  height: 15px;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 125px;
 }
 
 .asideRow6 {
-    width: 85%;
-    height: 15px;
-    margin-bottom: 10px;
-    position: absolute;
-    top: 175px;
-
+  width: 85%;
+  height: 15px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 175px;
 }
 
 .asideRow7 {
-    width: 85%;
-    height: 15px;
-    margin-top: 10px;
-    position: absolute;
-    top: 190px;
-
+  width: 85%;
+  height: 15px;
+  margin-top: 10px;
+  position: absolute;
+  top: 190px;
 }
 
 .mainContent {
-    width: 100%;
-    height: 100%;
-    flex: 4;
-    padding: 0 10px;
-    margin-top: 0px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  padding: 0 10px;
+  margin-top: 0px;
 }
 
 .firstRow {
-    width: 100%;
-    height: 50%;
-    padding: 0 10px;
+  width: 100%;
+  height: 50%;
+  padding: 0 10px;
 }
 
 .secondRow {
-    display: flex;
-    width: 100%;
-    height: 50%;
-    padding: 0px 10px;
-    margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50%;
+  padding: 0px 10px;
+  margin-top: 25px;
 }
 
 .bigBox {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .smallBox {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
 }
 
 .smallBoxMarginLeft {
-    margin-left: 25px;
+  margin-left: 25px;
+}
+
+@-webkit-keyframes firstRowAnime {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 200px;
+  }
 }
 
 @keyframes firstRowAnime {
-    0% {
-        margin-top: 0
-    }
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 200px;
+  }
+}
 
-    100% {
-        margin-top: 200px
-    }
-
+@-webkit-keyframes secondRowAnime {
+  0% {
+    margin-top: 25px;
+  }
+  50% {
+    margin-top: 60px;
+  }
+  100% {
+    margin-top: 25px;
+  }
 }
 
 @keyframes secondRowAnime {
-    0% {
-        margin-top: 25px
-    }
+  0% {
+    margin-top: 25px;
+  }
+  50% {
+    margin-top: 60px;
+  }
+  100% {
+    margin-top: 25px;
+  }
+}
 
-    50% {
-        margin-top: 60px
-    }
-
-    100% {
-        margin-top: 25px
-    }
-
+@-webkit-keyframes asideRow7Anime {
+  0% {
+    top: 190px;
+  }
+  100% {
+    top: 390px;
+  }
 }
 
 @keyframes asideRow7Anime {
-    0% {
-        top: 190px;
-    }
+  0% {
+    top: 190px;
+  }
+  100% {
+    top: 390px;
+  }
+}
 
-    100% {
-        top: 390px;
-    }
+@-webkit-keyframes asideRow6Anime {
+  0% {
+    top: 175px;
+  }
+  100% {
+    top: 375px;
+  }
 }
 
 @keyframes asideRow6Anime {
-    0% {
-        top: 175px;
-    }
+  0% {
+    top: 175px;
+  }
+  100% {
+    top: 375px;
+  }
+}
 
-    100% {
-        top: 375px;
-    }
+@-webkit-keyframes asideRow5Anime {
+  3% {
+    top: 125px;
+  }
+  100% {
+    top: 325px;
+  }
 }
 
 @keyframes asideRow5Anime {
+  3% {
+    top: 125px;
+  }
+  100% {
+    top: 325px;
+  }
+}
 
-    3% {
-        top: 125px
-    }
-
-    100% {
-        top: 325px;
-    }
+@-webkit-keyframes asideRow4Anime {
+  6% {
+    top: 100px;
+  }
+  100% {
+    top: 300px;
+  }
 }
 
 @keyframes asideRow4Anime {
-    6% {
-        top: 100px
-    }
+  6% {
+    top: 100px;
+  }
+  100% {
+    top: 300px;
+  }
+}
 
-    100% {
-        top: 300px;
-    }
+@-webkit-keyframes asideRow3Anime {
+  9% {
+    top: 75px;
+  }
+  100% {
+    top: 275px;
+  }
 }
 
 @keyframes asideRow3Anime {
-    9% {
-        top: 75px
-    }
+  9% {
+    top: 75px;
+  }
+  100% {
+    top: 275px;
+  }
+}
 
-    100% {
-        top: 275px;
-    }
+@-webkit-keyframes asideRow2Anime {
+  12% {
+    top: 50px;
+  }
+  100% {
+    top: 250px;
+  }
 }
 
 @keyframes asideRow2Anime {
-    12% {
-        top: 50px;
-    }
+  12% {
+    top: 50px;
+  }
+  100% {
+    top: 250px;
+  }
+}
 
-    100% {
-        top: 250px;
-    }
+@-webkit-keyframes asideRow1Anime {
+  15% {
+    top: 0px;
+  }
+  100% {
+    top: 200px;
+  }
 }
 
 @keyframes asideRow1Anime {
-    15% {
-        top: 0px;
-    }
+  15% {
+    top: 0px;
+  }
+  100% {
+    top: 200px;
+  }
+}
 
-    100% {
-        top: 200px;
-    }
+@-webkit-keyframes firstRowAnimeClose {
+  0% {
+    margin-top: 200px;
+  }
+  20% {
+    margin-top: 200px;
+  }
+  100% {
+    margin-top: 0px;
+  }
 }
 
 @keyframes firstRowAnimeClose {
-    0% {
-        margin-top: 200px
-    }
+  0% {
+    margin-top: 200px;
+  }
+  20% {
+    margin-top: 200px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
 
-    20% {
-        margin-top: 200px
-    }
-
-    100% {
-        margin-top: 0px
-    }
-
+@-webkit-keyframes secondRowAnimeClose {
+  0% {
+    margin-top: 25px;
+  }
+  20% {
+    margin-top: 25px;
+  }
+  50% {
+    margin-top: 60px;
+  }
+  100% {
+    margin-top: 25px;
+  }
 }
 
 @keyframes secondRowAnimeClose {
-    0% {
-        margin-top: 25px
-    }
+  0% {
+    margin-top: 25px;
+  }
+  20% {
+    margin-top: 25px;
+  }
+  50% {
+    margin-top: 60px;
+  }
+  100% {
+    margin-top: 25px;
+  }
+}
 
-    20% {
-        margin-top: 25px
-    }
-
-    50% {
-        margin-top: 60px
-    }
-
-    100% {
-        margin-top: 25px
-    }
-
+@-webkit-keyframes asideRow7AnimeClose {
+  0% {
+    top: 390px;
+  }
+  20% {
+    top: 390px;
+  }
+  35% {
+    top: 390px;
+  }
+  100% {
+    top: 190px;
+  }
 }
 
 @keyframes asideRow7AnimeClose {
-    0% {
-        top: 390px;
-    }
+  0% {
+    top: 390px;
+  }
+  20% {
+    top: 390px;
+  }
+  35% {
+    top: 390px;
+  }
+  100% {
+    top: 190px;
+  }
+}
 
-    20% {
-        top: 390px;
-    }
-
-    35% {
-        top: 390px;
-    }
-
-    100% {
-        top: 190px;
-    }
+@-webkit-keyframes asideRow6AnimeClose {
+  0% {
+    top: 375px;
+  }
+  20% {
+    top: 375px;
+  }
+  35% {
+    top: 375px;
+  }
+  100% {
+    top: 175px;
+  }
 }
 
 @keyframes asideRow6AnimeClose {
-    0% {
-        top: 375px;
-    }
+  0% {
+    top: 375px;
+  }
+  20% {
+    top: 375px;
+  }
+  35% {
+    top: 375px;
+  }
+  100% {
+    top: 175px;
+  }
+}
 
-    20% {
-        top: 375px;
-    }
-
-    35% {
-        top: 375px;
-    }
-
-    100% {
-        top: 175px;
-    }
+@-webkit-keyframes asideRow5AnimeClose {
+  0% {
+    top: 325px;
+  }
+  20% {
+    top: 325px;
+  }
+  32% {
+    top: 325px;
+  }
+  100% {
+    top: 125px;
+  }
 }
 
 @keyframes asideRow5AnimeClose {
-    0% {
-        top: 325px
-    }
+  0% {
+    top: 325px;
+  }
+  20% {
+    top: 325px;
+  }
+  32% {
+    top: 325px;
+  }
+  100% {
+    top: 125px;
+  }
+}
 
-    20% {
-        top: 325px
-    }
-
-    32% {
-        top: 325px
-    }
-
-    100% {
-        top: 125px;
-    }
+@-webkit-keyframes asideRow4AnimeClose {
+  0% {
+    top: 300px;
+  }
+  20% {
+    top: 300px;
+  }
+  29% {
+    top: 300px;
+  }
+  100% {
+    top: 100px;
+  }
 }
 
 @keyframes asideRow4AnimeClose {
-    0% {
-        top: 300px
-    }
+  0% {
+    top: 300px;
+  }
+  20% {
+    top: 300px;
+  }
+  29% {
+    top: 300px;
+  }
+  100% {
+    top: 100px;
+  }
+}
 
-    20% {
-        top: 300px
-    }
-
-    29% {
-        top: 300px
-    }
-
-    100% {
-        top: 100px;
-    }
+@-webkit-keyframes asideRow3AnimeClose {
+  0% {
+    top: 275px;
+  }
+  20% {
+    top: 275px;
+  }
+  26% {
+    top: 275px;
+  }
+  100% {
+    top: 75px;
+  }
 }
 
 @keyframes asideRow3AnimeClose {
-    0% {
-        top: 275px
-    }
+  0% {
+    top: 275px;
+  }
+  20% {
+    top: 275px;
+  }
+  26% {
+    top: 275px;
+  }
+  100% {
+    top: 75px;
+  }
+}
 
-    20% {
-        top: 275px
-    }
-
-    26% {
-        top: 275px
-    }
-
-    100% {
-        top: 75px;
-    }
+@-webkit-keyframes asideRow2AnimeClose {
+  0% {
+    top: 250px;
+  }
+  20% {
+    top: 250px;
+  }
+  23% {
+    top: 250px;
+  }
+  100% {
+    top: 50px;
+  }
 }
 
 @keyframes asideRow2AnimeClose {
-    0% {
-        top: 250px;
-    }
+  0% {
+    top: 250px;
+  }
+  20% {
+    top: 250px;
+  }
+  23% {
+    top: 250px;
+  }
+  100% {
+    top: 50px;
+  }
+}
 
-    20% {
-        top: 250px;
-    }
-
-    23% {
-        top: 250px;
-    }
-
-    100% {
-        top: 50px;
-    }
+@-webkit-keyframes asideRow1AnimeClose {
+  0% {
+    top: 200px;
+  }
+  20% {
+    top: 200px;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 @keyframes asideRow1AnimeClose {
-    0% {
-        top: 200px;
-    }
-
-    20% {
-        top: 200px;
-    }
-
-    100% {
-        top: 0;
-    }
+  0% {
+    top: 200px;
+  }
+  20% {
+    top: 200px;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 .loginSignUpForm {
-    width: 100%;
-    max-width: 1000px;
-    height: 200px;
-    position: relative;
-    top: -200px;
-    left: 0;
-    z-index: 0;
-
+  width: 100%;
+  max-width: 1000px;
+  height: 200px;
+  position: relative;
+  top: -200px;
+  left: 0;
+  z-index: 0;
 }
 
 .loginSignUpForm1 {
-    width: 100%;
-    max-width: 1000px;
-    height: 200px;
-    background-color: #262c33;
-    padding: 30px 10px 30px 50px;
-    display: flex;
-    justify-content: flex-start;
-    overflow: hidden;
-    z-index: -10;
-    transform: rotateX(0deg);
+  width: 100%;
+  max-width: 1000px;
+  height: 200px;
+  background-color: #262c33;
+  padding: 30px 10px 30px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow: hidden;
+  z-index: -10;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
 }
 
 .closeButton {
-    position: absolute;
-    right: 10px;
-    top: -30px;
-    cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: -30px;
+  cursor: pointer;
 }
 
 .closeButton i {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .welcome {
-    color: #32b676;
-    font-size: 30px;
-    letter-spacing: 1.4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 50px;
-    margin-bottom: 25px;
-    margin-top: -200px;
+  color: #32b676;
+  font-size: 30px;
+  letter-spacing: 1.4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 50px;
+  margin-bottom: 25px;
+  margin-top: -200px;
 }
 
 .logIn {
-    margin-top: -170px;
+  margin-top: -170px;
 }
 
 .logIn span {
-    color: #60666c;
+  color: #60666c;
 }
 
 .logInInput {
-    all: unset;
-    padding: 7px 10px;
-    background-color: #dfe1e3;
-    color: #888888;
-    margin: 5px 0;
-    border-radius: var(--borderRadious);
-    width: 200px;
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
-    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+  all: unset;
+  padding: 7px 10px;
+  background-color: #dfe1e3;
+  color: #888888;
+  margin: 5px 0;
+  border-radius: var(--borderRadious);
+  width: 200px;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
 }
 
-.logInInput::placeholder{
-    font-size: 15px
+.logInInput::-webkit-input-placeholder {
+  font-size: 15px;
+}
+
+.logInInput:-ms-input-placeholder {
+  font-size: 15px;
+}
+
+.logInInput::-ms-input-placeholder {
+  font-size: 15px;
+}
+
+.logInInput::placeholder {
+  font-size: 15px;
 }
 
 .logInForgotGo {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 5px 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5px 5px 0 5px;
 }
 
 .forgotPassword {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    color: #84888d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  color: #84888d;
 }
 
 .goButton {
-    padding: 5px 15px;
-    background-color: #1d9f5c;
-    color: white;
-    border: none;
-    outline: none;
-    border-radius: var(--borderRadious);
-    font-size: 18px;
-    cursor: pointer;
+  padding: 5px 15px;
+  background-color: #1d9f5c;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: var(--borderRadious);
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .verticalLine {
-    margin: 0 25px;
-    height: 100%;
-    font-size: 15px;
-    padding: 25px;
-    color: #3c4248;
-    margin-top: -155px;
+  margin: 0 25px;
+  height: 100%;
+  font-size: 15px;
+  padding: 25px;
+  color: #3c4248;
+  margin-top: -155px;
 }
 
 .line {
-    width: 1px;
-    height: 30%;
-    border: 2px solid #31373c;
-    margin-left: 4px;
+  width: 1px;
+  height: 30%;
+  border: 2px solid #31373c;
+  margin-left: 4px;
 }
 
 .line1 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .line2 {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .logInWith {
-    color: #60666c;
-    display: flex;
-    flex-direction: column;
-    margin-top: -165px;
+  color: #60666c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -165px;
 }
 
 .logInWithButton {
-    outline: none;
-    border: none;
-    border-radius: var(--borderRadious);
-    font-size: 15px;
-    padding: 6px 10px;
-    color: white;
-    width: 130px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  outline: none;
+  border: none;
+  border-radius: var(--borderRadious);
+  font-size: 15px;
+  padding: 6px 10px;
+  color: white;
+  width: 130px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .logInWithButton i {
-    font-size: 20px;
-    margin-right: 10px;
+  font-size: 20px;
+  margin-right: 10px;
 }
 
 .logInWithButton1 {
-    background-color: #375087;
-    margin: 7px 0 10px;
+  background-color: #375087;
+  margin: 7px 0 10px;
 }
 
 .logInWithButton2 {
-    background-color: #c73638;
-    margin-bottom: 10px;
+  background-color: #c73638;
+  margin-bottom: 10px;
 }
 
 .logInWithButton3 {
-    background-color: #23b0e4;
+  background-color: #23b0e4;
 }
 
 .signUp {
-    margin-left: 205px;
-    margin-top: -65px;
-    justify-self: flex-end;
-
+  margin-left: 205px;
+  margin-top: -65px;
+  justify-self: flex-end;
 }
 
 .signUpButton {
-    border-radius: var(--borderRadious);
-    background-color: #262c33;
-    color: #93969e;
-    border: 2px solid #93969e;
-    padding: 7px 13px;
-    font-weight: 600;
-    font-size: 13px;
-    width: 80px;
-    cursor: pointer;
-    outline: none;
+  border-radius: var(--borderRadious);
+  background-color: #262c33;
+  color: #93969e;
+  border: 2px solid #93969e;
+  padding: 7px 13px;
+  font-weight: 600;
+  font-size: 13px;
+  width: 80px;
+  cursor: pointer;
+  outline: none;
 }
 
 .loginSignUpForm2 {
-    width: 100%;
-    max-width: 1000px;
-    height: 200px;
-    background-color: #262c33;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 30px 10px 30px 50px;
-    display: flex;
-    justify-content: flex-start;
-    overflow: hidden;
-    z-index: -1;
-    transform: rotateX(-180deg);
+  width: 100%;
+  max-width: 1000px;
+  height: 200px;
+  background-color: #262c33;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 10px 30px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow: hidden;
+  z-index: -1;
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
 }
 
 .closeButton2 {
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
 }
 
 .closeButton2 i {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .welcome2 {
-    color: #32b676;
-    font-size: 30px;
-    letter-spacing: 1.4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 50px;
-    margin-bottom: 25px;
+  color: #32b676;
+  font-size: 30px;
+  letter-spacing: 1.4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 50px;
+  margin-bottom: 25px;
 }
 
 .logIn2 {
-    position: relative;
+  position: relative;
 }
 
 .logIn2 span {
-    color: #60666c;
+  color: #60666c;
 }
 
 .logInInput2 {
-    all: unset;
-    padding: 7px 10px;
-    background-color: #dfe1e3;
-    color: #888888;
-    margin: 5px 0;
-    border-radius: var(--borderRadious);
-    width: 200px;
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
-    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+  all: unset;
+  padding: 7px 10px;
+  background-color: #dfe1e3;
+  color: #888888;
+  margin: 5px 0;
+  border-radius: var(--borderRadious);
+  width: 200px;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
 }
 
-.logInInput2::placeholder{
-    font-size: 15px;
+.logInInput2::-webkit-input-placeholder {
+  font-size: 15px;
 }
 
-.logInInput2Width{
-    width: 155px;
+.logInInput2:-ms-input-placeholder {
+  font-size: 15px;
 }
+
+.logInInput2::-ms-input-placeholder {
+  font-size: 15px;
+}
+
+.logInInput2::placeholder {
+  font-size: 15px;
+}
+
+.logInInput2Width {
+  width: 155px;
+}
+
 .okButton {
-    padding: 5.5px 15px;
-    background-color: #1d9f5c;
-    color: white;
-    border: none;
-    outline: none;
-    border-top-right-radius: var(--borderRadious);
-    border-bottom-right-radius: var(--borderRadious);
-    font-size: 18px;
-    cursor: pointer;
-    position: absolute;
-    bottom: 1px;
-    right: 4px;
+  padding: 5.5px 15px;
+  background-color: #1d9f5c;
+  color: white;
+  border: none;
+  outline: none;
+  border-top-right-radius: var(--borderRadious);
+  border-bottom-right-radius: var(--borderRadious);
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1px;
+  right: 4px;
 }
 
 .verticalLine2 {
-    margin: 0 25px;
-    height: 100%;
-    font-size: 15px;
-    padding: 25px;
-    color: #3c4248;
-    margin-top: -25px;
+  margin: 0 25px;
+  height: 100%;
+  font-size: 15px;
+  padding: 25px;
+  color: #3c4248;
+  margin-top: -25px;
 }
 
 .line2 {
-    width: 1px;
-    height: 30%;
-    border: 2px solid #31373c;
-    margin-left: 4px;
+  width: 1px;
+  height: 30%;
+  border: 2px solid #31373c;
+  margin-left: 4px;
 }
 
 .line12 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .line22 {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .logInWith2 {
-    color: #60666c;
-    display: flex;
-    flex-direction: column;
+  color: #60666c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .logInWithButton2 {
-    outline: none;
-    border: none;
-    border-radius: var(--borderRadious);
-    font-size: 15px;
-    padding: 6px 10px;
-    color: white;
-    width: 130px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  outline: none;
+  border: none;
+  border-radius: var(--borderRadious);
+  font-size: 15px;
+  padding: 6px 10px;
+  color: white;
+  width: 130px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .logInWithButton2 i {
-    font-size: 20px;
-    margin-right: 10px;
+  font-size: 20px;
+  margin-right: 10px;
 }
 
 .logInWithButton12 {
-    background-color: #375087;
-    margin: 7px 0 10px;
+  background-color: #375087;
+  margin: 7px 0 10px;
 }
 
 .logInWithButton22 {
-    background-color: #c73638;
-    margin-bottom: 10px;
+  background-color: #c73638;
+  margin-bottom: 10px;
 }
 
 .logInWithButton32 {
-    background-color: #23b0e4;
+  background-color: #23b0e4;
 }
 
 .signUp2 {
-    margin-left: 205px;
-    margin-top: 30px;
-    justify-self: flex-end;
-
+  margin-left: 205px;
+  margin-top: 30px;
+  justify-self: flex-end;
 }
 
 .signUpButton2 {
-    border-radius: var(--borderRadious);
-    background-color: #262c33;
-    color: #93969e;
-    border: 2px solid #93969e;
-    padding: 7px 13px;
-    font-weight: 600;
-    font-size: 13px;
-    width: 80px;
-    cursor: pointer;
-    outline: none;
+  border-radius: var(--borderRadious);
+  background-color: #262c33;
+  color: #93969e;
+  border: 2px solid #93969e;
+  padding: 7px 13px;
+  font-weight: 600;
+  font-size: 13px;
+  width: 80px;
+  cursor: pointer;
+  outline: none;
+}
+
+@-webkit-keyframes welcome2 {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -200px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 
 @keyframes welcome2 {
-    0% {
-        margin-top: 0
-    }
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -200px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
 
-    50% {
-        margin-top: -200px
-    }
-
-    100% {
-        margin-top: 0
-    }
+@-webkit-keyframes logIn2 {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -170px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 
 @keyframes logIn2 {
-    0% {
-        margin-top: 0
-    }
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -170px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
 
-    50% {
-        margin-top: -170px
-    }
-
-    100% {
-        margin-top: 0
-    }
+@-webkit-keyframes logIn2Button {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 170px;
+  }
+  100% {
+    bottom: 0;
+  }
 }
 
 @keyframes logIn2Button {
-    0% {
-        bottom: 0
-    }
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 170px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
 
-    50% {
-        bottom: 170px
-    }
-
-    100% {
-        bottom: 0
-    }
+@-webkit-keyframes verticalLine2 {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -155px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 
 @keyframes verticalLine2 {
-    0% {
-        margin-top: 0
-    }
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -155px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
 
-    50% {
-        margin-top: -155px
-    }
-
-    100% {
-        margin-top: 0
-    }
+@-webkit-keyframes logInWith2 {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -220px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 
 @keyframes logInWith2 {
-    0% {
-        margin-top: 0
-    }
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -220px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
 
-    50% {
-        margin-top: -220px
-    }
-
-    100% {
-        margin-top: 0
-    }
+@-webkit-keyframes signUp2 {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -55px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 
 @keyframes signUp2 {
-    0% {
-        margin-top: 0
-    }
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -55px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
 
-    50% {
-        margin-top: -55px
-    }
-
-    100% {
-        margin-top: 0
-    }
+@-webkit-keyframes closeBtn2 {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -30px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 
 @keyframes closeBtn2 {
-    0% {
-        margin-top: 0
-    }
-
-    50% {
-        margin-top: -30px
-    }
-
-    100% {
-        margin-top: 0
-    }
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -30px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
+/*# sourceMappingURL=style.css.map */
